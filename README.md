@@ -1,62 +1,39 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# Todu API
+This project is a RestFul interface of the lantern application.
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
 
-## About Laravel
+## Not familiar git? Do this
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+1. Fork the repo by visiting this [link](https://github.com/danielokoronkwo-coder/todu-api/fork) or clicking on the **Fork** button at the top right corner
+2. Go to your Terminal(Linux and Mac users), Git Bash(Windows), Termux(Android) and `cd` to the directory you'd like to work from. If you're using Termux, do `termux-setup-storage` and then `cd storage/downloads` and work from there.
+3. Run `git clone https://github.com/danielokoronkwo-coder/todu-api` to clone the repo on your machine.
+4. Run `cd Todu` to enter into the cloned repo.
+5. Run `git remote add upstream https://github.com/danielokoronkwo-coder/todu-api` to create an alias for the repository
+6. Go to your forked repository, there is a **clone or download** button, click on it and copy the url displayed.
+7. Go back to your terminal and add an alias for your repo by running `git remote add task <paste the url here>`, without the angled brackets. You can replace **task** with an alias of your choice, just make sure you remember it.
+8. Run `git checkout master` to ensure you're in the correct branch.
+9. Make your changes to the file, make your contributions and smile a lot while doing that. We don't want angry code in the repo.
+10. Run `git add .` to stage all your changes to be committed. Do not spill anything on your PC at this point.
+11. Run `git commit -m "<your username>:<Feature>: <Your commit message>"`
+12. Run `git pull --rebase upstream master` to apply possible changes that might have happened on the online repo while you were making your own changes.
+13. Run `git push task master`. Remember to replace the alias if you changed it.
+14. Visit the URL of your forked repo. You'll see a button **Compare and pull request**. Click on it, type the appropriate messages and then make the pull request.
+15. Take a nap, you earned it no matter how little your change.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## To contribute:
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+* Ensure you do not edit the .gitignore file for any reason. 
+* Whatever extension to the User model is done through a database relationship and not by OOP inheritance.
+* Ensure code works before pushing. Don't push breaking code.
 
-## Learning Laravel
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+#### Note: This README will be updated as often as possible to ensure we know how to set things up
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/)**
-- **[OP.GG](https://op.gg)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## To get Laravel part up and running
+1. Proceed to the Laravel project directory by: `cd Laravel_APIs`
+2. Run `composer install` to install composer dependencies.
+3. Run `npm install` to install npm dependencies.
+4. Run `cp .env.example .env` to create a copy of your **.env** file.
+5. Run `php artisan key:generate` to generate an app encyrption key.
+6. Run `php artisan serve` or `php -S localhost:8000 -t public/` to run the development server.
