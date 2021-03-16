@@ -1,5 +1,5 @@
 # Todu API
-This project is a RestFul interface of the lantern application.
+This project is a RestFul interface of the **TODU** application.
 
 
 ## Not familiar git? Do this
